@@ -1,0 +1,8 @@
+{
+  "name": "xoniabot",
+  "language": "javascript",
+  "manager": "npm",
+  "token": "TOKEN_HERE",
+  "prefix": "!"
+}
+
