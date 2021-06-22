@@ -7,14 +7,14 @@ module.exports = class HelpCommand extends BaseCommand {
   }
 
   run(client, message, args) {
-
     const help1 = new discord.MessageEmbed()
     .setTitle('Help')
     .addFields(
       {name: 'Page 2', value: 'Moderation Commands'},
       {name: 'Page 3', value: 'Fun'},
       {name: 'Page 4', value: 'Animals'},
-      {name: 'Page 5', value: 'Common'}
+      {name: 'Page 5', value: 'Common'},
+      {name: 'Page 6', value: 'Mod commands'}
     )
     
     const help3 = new discord.MessageEmbed()
@@ -47,16 +47,27 @@ module.exports = class HelpCommand extends BaseCommand {
       {name: 'ping', value: 'checks the latency'}
     )
 
+    const modhelpembed = new discord.MessageEmbed()
+      .setTitle("<:Warning:850441417352544296> Only use these commands if needed <:Warning:850441417352544296>")
+      .setDescription("o")
+      .addFields(
+        {name: 'lockdown', value: 'Enteres lockdown mode'},
+        {name: 'unlockdown', value: 'leaves lockdown mode'}
+      )
+
     const pages = [
       help1,
       help2,
       help3,
       help4,
-      help5
+      help5,
+      modhelpembed
     ]
     
     const emoji = ["⏪", "⏩"]
 
 
     pagination(message, pages, emoji)
-}}
+  
+  }
+}

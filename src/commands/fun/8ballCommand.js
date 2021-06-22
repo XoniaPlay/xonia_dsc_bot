@@ -11,7 +11,7 @@ module.exports = class _8ballCommand extends BaseCommand {
   
       return rand[Math.floor(Math.random()*rand.length)];
   }
-  if(!args[1]) return message.channel.send("Error: Please send a question with more than 1 word")
+  if(!args[0]) return message.channel.send("Error: Please send a question with more than 1 word")
   else{
   message.channel.send(doMagic8BallVoodoo())
   }
