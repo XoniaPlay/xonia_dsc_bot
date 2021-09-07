@@ -13,7 +13,7 @@ module.exports = class MessageEvent extends BaseEvent {
       
     }
     else{
-      let blacklistedwords = ['fuck', 'dick', 'asshole', 'bitch', 'retard', 'bastard', 'cunt', 'ass', 'cum', 'sex', 'sexy','youporn.com', 'grabify.link', 'discord.gift/', 'iplogger.org', 'pornhub.com', 'hentaihaven.xxx', 'hentaihaven.red']
+      let blacklistedwords = ['fuck', 'dick', 'asshole', 'bitch', 'retard', 'bastard', 'cunt', 'ass', 'cum', 'sex', 'sexy', 'xnxx.com' , 'youporn.com', 'grabify.link', 'discord.gift/', 'iplogger.org', 'pornhub.com', 'hentaihaven.xxx', 'hentaihaven.red']
 
     let badworddetected = false;
     for (var i in blacklistedwords) {
