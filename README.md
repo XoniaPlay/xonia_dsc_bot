@@ -31,3 +31,8 @@ You need to have node.js installed
 
 To use eval, you need to be a bot admin. You can give yourself that permission by going to [eval.js on line 14](https://github.com/XoniaPlay/xonia_dsc_bot/blob/0456ea7a5e4d03622489f033767a875b129ec83f/src/commands/botadmin/EvalCommand.js#L14)
 . There can give [2 people bot admin](https://github.com/XoniaPlay/xonia_dsc_bot/blob/0456ea7a5e4d03622489f033767a875b129ec83f/src/commands/botadmin/EvalCommand.js#L22) (yourself and someone else). If you only want 1 person as bot admin, you can just delete one of the else if(message.author.id === "")
+
+
+---
+>##### This Bot uses Discord.js V12 ⚠️
+---
